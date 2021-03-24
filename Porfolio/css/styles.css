@@ -1,0 +1,144 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: black;
+}
+#profile,#parcours,#competences,#contact{
+    min-height: 80vh;
+    border-bottom: 2px solid orangered;
+    color: #fff;
+}
+header{
+    min-height: 80vh;
+    background-image: url(../img/head1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(195, 89, 50);
+}
+#ham-opener{
+    width:40px;
+    height:40px;
+    position:absolute;
+    right:0;
+}
+#ham-menu {
+    display:none;
+    list-style-type: none;
+    background:rgb(241, 194, 194);
+    padding:1rem 0 1rem 2rem;
+    position:absolute;
+    top:40px;
+    left:0;
+    width:100%;
+}
+.nav-items{
+    justify-content: space-between;
+}
+.nav-link{
+    color: black;
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.nav-link:hover
+{
+    background-color: rgb(216, 135, 6);
+}
+.hello{
+    padding-top: 5%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+header nav {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:2;
+}
+.aboutme{
+    line-height: 2;
+}
+.text-second{
+    color: rgb(195, 89, 50);
+}
+#part1-1-2{
+    padding-left: 50px;
+    padding-top: 30px;
+}
+.title{
+    padding-top: 2rem;
+    text-align: center;
+}
+#part1-1, #part2-1, #part3-1,#part4-1{
+    display: flex;
+    padding-top: 2.5rem;
+    padding: 3% 10% 3% 10%;
+    justify-content: space-evenly;
+}
+.exp,.edu{
+    line-height: 2;
+    height: 12vh;
+    border-bottom: 1.5px solid orange;
+}
+
+.form-control{
+    height: 6vh;
+    width: 300px;
+}
+#contactTextInput{
+    width: 350px;
+}
+
+.submit{
+    width: 80px;
+    height: 5vh;
+    background-color: rgb(195, 89, 50);
+}
+footer
+{
+    background-color: white;
+    color: black;
+    min-height: 8vh;
+    align-items: center;
+    clear: both;
+}
+.checked{
+    color: rgb(195, 89, 50);
+}
+#info, #lag{
+    line-height: 1.5;
+    text-align: right;
+}
+.textfooter{
+    padding-top: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width:991px){
+    #part1-1, #part2-1, #part3-1,#part4-1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .edu,.exp{
+        border-bottom: none;
+    }
+}
+@media screen and (max-width: 768px){
+    #part1-1, #part2-1, #part3-1,#part4-1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .edu,.exp{
+        border-bottom: none;
+    }
+}
